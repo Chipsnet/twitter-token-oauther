@@ -28,7 +28,8 @@ def get_access_token(pin, consumer, oauth_token, oauth_secret):
     response, content = oauth2_client.request("https://api.twitter.com/oauth/access_token", "POST", body="oauth_verifier={0}".format(pin))
 
     if response.status != 200:
-        auth_error(response, content)
+        print('\nError!\nPINの認証に失敗しました。PINが間違っていないか、もう一度ご確認ください。')
+        exit()
 
     access_token = parse_response_content(content)
 
