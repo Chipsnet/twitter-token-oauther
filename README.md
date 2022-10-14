@@ -27,3 +27,7 @@ pipenv install
 ```shell
 python main.py
 ```
+
+## Support me!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A81VPXD)
